@@ -1,8 +1,20 @@
 /* -------------Général-------------- */
 
-body {
-  margin: 0;
+* {
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;  
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+  background-color: #F7F7F7;
 }
 
 :root {
@@ -15,29 +27,47 @@ p,h1,h2,h3 {
   margin: 0;
 }
 
+h1 {
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+}
+
+h2 {
+  height: 24px;
+  width: 700;
+}
+
+h3 {
+  height: 18px;
+  width: 700;
+}
+
 a {
 text-decoration: none;
 }
 
 /* -------------Header-------------- */
 
-header .title {
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  line-height: 63px;
-  background-color: white;  
+  height: 63px;
+  padding: 0;
+  background: #FFFFFF;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   position: relative;
   z-index: 1;
 }
 
-.title h1{
-  font-family: "Shrikhand", cursive, sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  text-align: center;
-}
+#header-logo {
+  height: 30px;
+ }
 
-header .location {
+.location {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +77,8 @@ header .location {
   padding: 0;
 }
 
-header .location p {
+.location p {
+  line-height: 19px;
   font-weight: 500;
 }
 
@@ -55,24 +86,19 @@ header .location p {
 
 .infos {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;  
   background-color: #f6f6f6;
-  padding: 40px 10%;
-  gap: 20px;
-}
-
-.infos h2 {
-  font-size: 24px;
-  font-weight: 700;
-  text-align: center;
+  padding: 39.5px 30px 57px 20px ;
+  gap: 27px;
 }
 
 .infos p {
-  font-size: 18px;
-  text-align: center;
   font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;   
+  text-align: center; 
 }
 
 .button {
@@ -82,8 +108,8 @@ header .location p {
   align-self: center;
   border-radius: 25px;
   color: white;
-  font-weight: 500; 
-  margin-bottom: 30px;   
+  font-weight: 500;
+  line-height: 19px; 
 }
 
 .button:hover {
@@ -97,11 +123,7 @@ header .location p {
   background-color: #FFF;
   display: flex;
   flex-direction: column;
-}
-
-.fonctionnement h2 {
-  font-weight: 700;
-  font-size: 24px;
+  gap: 5px;
 }
 
 .fonctionnement-list {
@@ -119,6 +141,7 @@ header .location p {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   height: 72.38px;
+  width: 100%;
   counter-increment: my-counter 1;
 }
 
@@ -153,15 +176,11 @@ header .location p {
 
 /* Restaurants */
 
-.restaurants h2 {
-  font-weight: 700;
-  font-size: 24px;
-}
-
 .restaurants {
   display: flex;
   flex-direction: column;
   padding: 54px 20px 66px 20px;
+  gap:20px
  }
 
 .restaurants a {
@@ -184,6 +203,7 @@ header .location p {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
+  overflow:hidden;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -212,3 +232,38 @@ header .location p {
 }
 
 /* Footer */ 
+
+footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #353535;
+  padding: 22px;
+  gap: 16px;
+}
+
+.footer-logo {  
+  height: 18px; 
+  filter: invert(100%);  
+}
+
+ .footer-list{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list a {
+  font-weight: 400;
+  color: white;
+ }
+.footer-list p {
+  font-weight: 500;
+  color: #FFFFFF;
+}
+ .footer-list i{
+  width: 11px;
+  padding-right: 11px;  
+ }
