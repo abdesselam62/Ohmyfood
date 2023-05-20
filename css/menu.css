@@ -140,7 +140,7 @@
 .menu-card-dishes-title {
   border-bottom: 3px #99E2D0 solid;
   width: 40px;
-  margin-top: 25px;
+  margin-top: 42px;
 }
 
 .menu-card-dishes-plate {
@@ -255,7 +255,7 @@
   @media screen and (min-width: 1024px) {
   
     header  {
-    height: 96px;
+    height: 96.34px;
     }
   
     #header-logo {
@@ -268,21 +268,21 @@
    }
 
    .banner {
-    height: 444px;
+    height: 383px;    
   }
 
   .banner-img {
-    position: relative;
+    position: absolute;
     height: 956.14px;
-    top: -330px;
-   
+    left: 0;
+    top: -340px;
   }
   .menu-card {
     max-width: 1055px;
   }
 
   .menu-card-title {
-    padding-bottom: 40px;
+    padding-bottom: 5px;
   }
  
   .menu-card-dishes {
