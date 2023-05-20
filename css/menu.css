@@ -12,7 +12,6 @@
     width: 100%;
     max-width: 1440px;
     box-sizing: border-box;
-    background-color: #F7F7F7;
   }
   
   :root {
@@ -26,26 +25,35 @@
   }
   
   h1 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
+    font-family: "shrikhand";
+    font-size: 28px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 41px;
   }
   
   h2 {
-    height: 24px;
-    width: 700;
-    line-height: 28px;
+    padding-bottom: 7px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #000000;
   }
   
   h3 {
-    height: 18px;
-    width: 700;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 21px;
+    margin: 12px 0 5px 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #000000;
   }
   
   a {
-  text-decoration: none;
+    text-decoration: none;
   }
   
   p {
@@ -73,6 +81,136 @@
     height: 30px;
    }
 
+ header a {
+  position: absolute;
+  left: 23px;
+ }
+
+ header .return-arrow {
+  font-size: 20px; 
+  color: #353535;
+}
+
+/* -------------Menu-------------- */
+
+.banner {
+  
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F7F7;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  z-index: 2;
+  max-width: 1024px;
+  margin: -45px auto auto auto;
+}
+
+.menu-card-title {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding-top: 32px;
+  gap:24px;
+}
+
+.menu-card-title .menu-like {
+  padding-top: 10px;
+}
+
+.menu-card-dishes {
+  margin-left: 13px;
+  margin-right: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu-card-dishes-title {
+  border-bottom: 3px #99E2D0 solid;
+  width: 40px;
+  margin-top: 25px;
+}
+
+.menu-card-dishes-plate {
+  display: flex;
+  height: 69px;
+  border-radius: 15px;
+  background-color: #FFF;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.menu-card-dishes-plate:hover .dish-check {
+  width: 59px;
+}
+
+.dish-name {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.dish-name p {
+  font-size: 15.04px;
+  font-weight: 300;
+  margin: 0 0 12px 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dish-price {
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: flex-end;
+  padding-right: 10px;
+  margin-bottom: 13.5px;
+  color: #353535;
+}
+
+.list-dishes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.order-button {
+  display: flex;
+  justify-content: center;
+  padding: 40px ;
+}
+
+.button {
+  background:linear-gradient(193.33deg, var(--primary-color) -11.44%, var(--secondary-color) 123.93%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);    
+  padding: 16px 48px;
+  align-self: center;
+  border-radius: 25px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
 
    /* Footer */ 
 
@@ -110,7 +248,7 @@
     flex-direction: column;
     gap: 7px;
   }
-  
+
     /****** Media queries ***********/
   /* Devices (tablets and desktops min-width: 1024px) */
 
@@ -128,6 +266,35 @@
     font-size: 40px;
     line-height: 47px;
    }
+
+   .banner {
+    height: 444px;
+  }
+
+  .banner-img {
+    position: relative;
+    height: 956.14px;
+    top: -330px;
+   
+  }
+  .menu-card {
+    max-width: 1055px;
+  }
+
+  .menu-card-title {
+    padding-bottom: 40px;
+  }
+ 
+  .menu-card-dishes {
+    
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-card-dishes-plate {
+    width: 634px;
+  }
+  
    .footer {
     flex-direction: row-reverse;
     padding: 57px 30px 30px; 
@@ -142,6 +309,7 @@
   .footer_list_1, .footer_list_2 {
     flex-direction: row;  
   }
+
   }
   
     

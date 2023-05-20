@@ -14,7 +14,6 @@ body {
   width: 100%;
   max-width: 1440px;
   box-sizing: border-box;
-  background-color: #F7F7F7;
 }
 
 :root {
@@ -74,6 +73,8 @@ header {
 #header-logo {
   height: 30px;
  }
+
+ /* Location */
 
 .location {
   display: flex;
