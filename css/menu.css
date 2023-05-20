@@ -138,7 +138,7 @@ header .return-arrow {
 .menu-card-dishes-title {
   border-bottom: 3px #99E2D0 solid;
   width: 40px;
-  margin-top: 25px;
+  margin-top: 42px;
 }
 
 .menu-card-dishes-plate {
@@ -254,43 +254,44 @@ header .return-arrow {
   /****** Media queries ***********/
 /* Devices (tablets and desktops min-width: 1024px) */
 
-@media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
+  
+    header  {
+    height: 96px;
+    }
+  
+    #header-logo {
+     height: 35px;
+   }
+  
+   h1 {
+    font-size: 40px;
+    line-height: 47px;
+   }
 
-h1 {
-  font-size: 40px;
-  line-height: 47px;
-}
+   .banner {
+    height: 444px;
+  }
 
-header  {
-  height: 96px;
-}
+  .banner-img {
+    position: relative;
+    height: 956.14px;
+    top: -330px;
+   
+  }
+  .menu-card {
+    max-width: 1055px;
+  }
 
-#header-logo {
-  height: 35px;
-}
-
-.banner {
-  height: 444px;
-}
-
-.banner-img {
-  position: relative;
-  height: 956.14px;
-  top: -330px;  
-}
-
-.menu-card {
-  max-width: 1055px;
-}
-
-.menu-card-title {
-  padding-bottom: 40px;
-}
-
-.menu-card-dishes {  
-  justify-content: center;
-  align-items: center;
-}
+  .menu-card-title {
+    padding-bottom: 40px;
+  }
+ 
+  .menu-card-dishes {
+    
+    justify-content: center;
+    align-items: center;
+  }
 
 .menu-card-dishes-plate {
   width: 634px;
