@@ -4,16 +4,9 @@
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  margin: 0;  
-  display: flex;
-  justify-content: center;
-}
 
 .main-container {
-  width: 100%;
-  max-width: 1440px;
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 :root {
@@ -183,14 +176,19 @@ header {
 
 /* Restaurants */
 
-.restaurants {
+.restaurants  {
   display: flex;
   flex-direction: column;
-  padding: 54px 20px 66px 20px;
   gap:20px;
   background-color: #F7F7F7;
 }
-  
+  .restaurants .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
 .restaurants a {
   color: #353535;
 }
@@ -308,7 +306,7 @@ header {
 }
 
 .restaurants{
-  padding: 30px 180px;
+  
   display: flex;
   flex-direction: column;
 }
