@@ -4,9 +4,8 @@
   font-family: "Roboto", sans-serif;
 }
 
-
 .main-container {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -15,8 +14,12 @@
 --tertiary-color: #99E2D0;
 }
 
-p,h1,h2,h3 {
+p,h1,h2,h3,body {
   margin: 0;
+}
+
+.main-index {
+  background-color:  #F6F6F6;
 }
 
 h1 {
@@ -122,12 +125,13 @@ header {
 
 /* Fonctionnement */  
 
-.fonctionnement{
+.fonctionnement{  
+  background-color:  #FFFFFF;  
+}
+
+.fonctionnement .container {
   padding: 48px 20px 68px 20px;
-  background-color:  #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+  margin: 0;
 }
 
 .fonctionnement-list {
@@ -176,19 +180,10 @@ header {
 
 /* Restaurants */
 
-.restaurants  {
-  display: flex;
-  flex-direction: column;
-  gap:20px;
-  background-color: #F7F7F7;
-}
-  .restaurants .container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-  }
+.restaurants .container {
+  padding: 54px 20px 66px 20px;
+} 
+  
 .restaurants a {
   color: #353535;
 }
@@ -206,6 +201,7 @@ header {
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
@@ -296,23 +292,36 @@ header {
   gap: 18px;
 }
 
-.fonctionnement{
-  padding: 50px 207px 50px 180px;   
+.fonctionnement .container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1080px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .fonctionnement-list {
   flex-direction: row;
-  gap: 36.51px  
+  gap: 36.51px;
+  justify-content: center;  
 }
 
-.restaurants{
-  
-  display: flex;
-  flex-direction: column;
+.functionning-list li {
+  width: 100%;
+}
+
+.restaurants .container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1080px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .restaurants-card {
   flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 50px;
   justify-content: space-between;
  }
 
