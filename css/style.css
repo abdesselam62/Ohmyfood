@@ -228,6 +228,20 @@ header {
   font-weight: 300;
 }
 
+.badge-new {
+  color: #008766;
+  background-color: #99E2D0;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 7px 9px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
 /*Heart*/
 
 .like i {
