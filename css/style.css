@@ -228,6 +228,34 @@ header {
   font-weight: 300;
 }
 
+/*Heart*/
+
+.like i {
+  font-size: 24px;
+  transition: opacity 300ms ease-in-out;
+  cursor: pointer;
+}
+.like .heart-full {
+  position: absolute;
+  bottom:30px;
+  right: 30px;
+  opacity: 0;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+.like .heart-full:hover {
+  opacity: 1;
+}
+
+.like .heart-empty {
+  position: absolute;
+  bottom:30px;
+  right: 30px;
+}
+
 /* Footer */ 
 
 .footer {
@@ -292,30 +320,31 @@ header {
   gap: 18px;
 }
 
+
 .fonctionnement .container {
   margin: 0 auto;
-  width: 100%;
-  max-width: 1080px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  max-width: 1440px;
+  padding: 50px 20px;
+}
+
+.fonctionnement .container h2 {
+ margin-bottom: 25px;
 }
 
 .fonctionnement-list {
   flex-direction: row;
   gap: 36.51px;
-  justify-content: center;  
+  justify-content: space-between;  
 }
 
-.functionning-list li {
-  width: 100%;
+.fonctionnement-list li {
+  width: 30%;
 }
 
 .restaurants .container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1080px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin: 0 auto;  
+  max-width: 1440px;
+  padding:30px 20px;
 }
 
 .restaurants-card {
@@ -326,13 +355,19 @@ header {
  }
 
 .card {
-  width: 490px;
+  width: 47%;
+  position: relative;
+  box-sizing: border-box
+}
+
+.restaurants img {
+  height: 240px;
 }
 
 .footer {
   flex-direction: row-reverse;
   padding: 57px 30px 30px; 
-  gap:60px;
+  gap: 60px;
   }
 
 .footer_list {

@@ -1,11 +1,9 @@
+
 * {
     font-family: "Roboto", sans-serif;
   }
   
   .main-container {
-    margin: 0 auto;  
-    width: 100%;
-    max-width: 1920px;
     box-sizing: border-box;
   }
   
@@ -70,9 +68,9 @@
     z-index: 1;
   }
   
-  #header-logo {
-    height: 30px;
-  }
+#header-logo {
+  height: 30px;
+}
 
 header a {
   position: absolute;
@@ -86,8 +84,7 @@ header .return-arrow {
 
 /* -------------Menu-------------- */
 
-.banner {
-  
+.banner {  
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -99,6 +96,31 @@ header .return-arrow {
   object-fit: cover;
 }
 
+/*Heart*/
+
+.menu-like i {
+  font-size: 24px;
+  transition: opacity 300ms ease-in-out;
+  cursor: pointer;
+}
+.menu-like .heart-full {
+  position: absolute;
+  top:45px;
+  opacity: 0;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+.menu-like .heart-full:hover {
+  opacity: 1;
+}
+
+.menu-like .heart-empty {
+  position: absolute;
+  top:45px;
+}
 .menu-card {
   display: flex;
   flex-direction: column;
@@ -115,11 +137,7 @@ header .return-arrow {
   justify-content: space-between;
   margin: auto;
   padding-top: 32px;
-  gap:24px;
-}
-
-.menu-card-title .menu-like {
-  padding-top: 10px;
+  gap: 40px;
 }
 
 .menu-card-dishes {
@@ -282,11 +300,10 @@ header .return-arrow {
     padding-bottom: 40px;
   }
  
-  .menu-card-dishes {
-    
+  .menu-card-dishes {    
     justify-content: center;
     align-items: center;
-  }
+}
 
 .menu-card-dishes-plate {
   width: 634px;
