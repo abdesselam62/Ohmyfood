@@ -1,4 +1,7 @@
 
+
+/* -------------Générales-------------- */
+
 * {
     font-family: "Roboto", sans-serif;
   }
@@ -99,28 +102,24 @@ header .return-arrow {
 /*Heart*/
 
 .menu-like i {
-  font-size: 24px;
-  transition: opacity 300ms ease-in-out;
+  position: absolute;
+  top: 3.5%;
+  font-size: 25px;
   cursor: pointer;
 }
-.menu-like .heart-full {
-  position: absolute;
-  top:45px;
+
+.heart-full {
   opacity: 0;
-  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  background-clip: text;
+  z-index: 1;
+  background-image: linear-gradient(to left top, #9356DC, #FF79DA);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   font-weight: 700;
 }
-.menu-like .heart-full:hover {
-  opacity: 1;
-}
 
-.menu-like .heart-empty {
-  position: absolute;
-  top:45px;
-}
+/*Cards*/
+
 .menu-card {
   display: flex;
   flex-direction: column;
@@ -326,4 +325,80 @@ header .return-arrow {
 
 }
 
-    
+    /****** Animation coeur ***********/
+
+.heart-full:hover{
+  animation: fill-up 800ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fill-up {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* -------------Apparition menus-------------- */
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.plate1 {
+  animation: apparition 1s ease 0.5s both;
+}
+
+.plate2 {
+  animation: apparition 1s ease 1s both;
+}
+
+.plate3 {
+  animation: apparition 1s ease 1.5s both;
+}
+
+.plate4 {
+  animation: apparition 1s ease 2s both;
+}
+
+.plate5 {
+  animation: apparition 1s ease 2.5s both;
+}
+
+.plate6 {
+  animation: apparition 1s ease 3s both;
+}
+
+.plate7 {
+  animation: apparition 1s ease 3.5s both;
+}
+
+.plate8 {
+  animation: apparition 1s ease 4s both;
+}
+
+.plate9 {
+  animation: apparition 1s ease 4.5s both;
+}
+
+.plate10 {
+  animation: apparition 1s ease 5s both;
+}
