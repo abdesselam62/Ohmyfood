@@ -257,7 +257,7 @@ header {
 .heart-full {
   opacity: 0;
   z-index: 1;
-  background-image: linear-gradient(to left top, #9356DC, #FF79DA);
+  background-image: linear-gradient(to left top, var(--primary-color), var(--secondary-color));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -370,10 +370,6 @@ header {
 
 .restaurants img {
   height: 240px;
-}
-
-.like .heart-full:hover {
-  opacity: 1;
 }
 
 .footer {

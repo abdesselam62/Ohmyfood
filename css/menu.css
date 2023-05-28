@@ -59,31 +59,31 @@
   /* -------------Header-------------- */
   
   header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 63px;
-    padding: 0;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-    position: relative;
-    z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 63px;
+  padding: 0;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
   }
   
-#header-logo {
+  #header-logo {
   height: 30px;
-}
+  }
 
-header a {
-  position: absolute;
-  left: 23px;
-}
+  header a {
+    position: absolute;
+    left: 23px;
+  }
 
-header .return-arrow {
-  font-size: 20px; 
-  color: #353535;
-}
+  header .return-arrow {
+    font-size: 20px; 
+    color: #353535;
+  }
 
 /* -------------Menu-------------- */
 
@@ -164,9 +164,6 @@ header .return-arrow {
   cursor: pointer;
 }
 
-.menu-card-dishes-plate:hover .dish-check {
-  width: 59px;
-}
 
 .dish-name {
   display: flex;
@@ -309,6 +306,10 @@ header .return-arrow {
   width: 634px;
 }
 
+.menu-card-dishes-plate:hover .dish-check {
+  width: 59px;
+}
+
 .footer {
   flex-direction: row-reverse;
   padding: 57px 30px 30px; 
@@ -330,7 +331,7 @@ header .return-arrow {
 
 .heart-full:hover{
   animation: fill-up 800ms;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;  
 }
 
 @keyframes fill-up {
@@ -402,4 +403,21 @@ header .return-arrow {
 
 .plate10 {
   animation: apparition 1s ease 5s both;
+}
+
+/* -------------Animation check-------------- */
+
+.dish-check {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  color: #FFF;
+  width: 0%;
+  transition: 300ms ease-in-out;
+}
+
+.menu-card-dishes-plate:hover .dish-check {
+  width: 59px;
 }
