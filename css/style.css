@@ -390,6 +390,89 @@ header {
 
 /****** Animations ***********/
 
+/****** Animation loader ***********/
+
+.loader {
+  position: fixed;
+  background-color:  #F6F6F6;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  z-index: 2;
+  animation: loader 10ms;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+.loader::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--primary-color);
+  border-radius: 50%;
+  animation-fill-mode: bottom;
+  animation: spinner 1s infinite linear;
+}
+
+.cercle-a {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--secondary-color);
+  border-radius: 50%;
+  animation-fill-mode: bottom;
+  animation: spinner 2s infinite linear;
+}
+
+.cercle-b {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--tertiary-color);
+  border-radius: 50%;
+  animation-fill-mode: bottom;
+  animation: spinner 3s infinite linear;
+}
+
+.loader i {  
+  content: "";
+  position: absolute;
+  font-size: 60px;  
+  background-image: linear-gradient(var(--secondary-color), var(--primary-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;  
+  animation-fill-mode: bottom;
+  animation: spinner 2.5s infinite linear;
+}
+
+
+@keyframes loader {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/****** Animation heart ***********/
+
 .heart-full:hover {
   animation: fill-up 800ms;
   animation-fill-mode: forwards;

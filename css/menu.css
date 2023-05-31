@@ -323,7 +323,9 @@
 
 }
 
-    /****** Animation coeur ***********/
+/****** Animations ***********/
+
+/****** Animation heart ***********/
 
 .heart-full:hover{
   animation: fill-up 500ms;
