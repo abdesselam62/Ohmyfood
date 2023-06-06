@@ -21,7 +21,7 @@
   }
   
   h1 {
-    font-family:'Shrikhand', cursive;
+    font-family:'Shrikhand';
     font-size: 28px;
     font-weight: 400;
     font-style: italic;
@@ -275,7 +275,7 @@
    }
   
    h1 {
-    font-size: 40px;
+    font-size: 32px;
     line-height: 47px;
    }
 
