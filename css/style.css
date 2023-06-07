@@ -394,7 +394,6 @@ header {
   border-right: 10px solid transparent;
   border-top: 10px solid var(--primary-color);
   border-radius: 50%;
-  animation-fill-mode: bottom;
   animation: spinner 1s infinite linear;
 }
 
@@ -406,7 +405,6 @@ header {
   border-right: 10px solid transparent;
   border-top: 10px solid var(--secondary-color);
   border-radius: 50%;
-  animation-fill-mode: bottom;
   animation: spinner 2s infinite linear;
 }
 
@@ -418,7 +416,6 @@ header {
   border-right: 10px solid transparent;
   border-top: 10px solid var(--tertiary-color);
   border-radius: 50%;
-  animation-fill-mode: bottom;
   animation: spinner 3s infinite linear;
 }
 
@@ -430,7 +427,6 @@ header {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;  
-  animation-fill-mode: bottom;
   animation: spinner 2.5s infinite linear;
 }
 
