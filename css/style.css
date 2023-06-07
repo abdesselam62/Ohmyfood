@@ -243,27 +243,6 @@ header {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-/*Heart*/
-
-.like i {
-  position: absolute;
-  bottom:30px;
-  right: 30px;
-  width: 25px;
-  height: 25px;
-  font-size: 25px;
-}
-
-.heart-full {
-  opacity: 0;
-  z-index: 1;
-  background-image: linear-gradient(to left top, var(--primary-color), var(--secondary-color));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-weight: 700;
-}
-
 /* Footer */ 
 
 .footer {
@@ -473,6 +452,24 @@ header {
 
 /****** Animation heart ***********/
 
+.like i {
+  position: absolute;
+  bottom:30px;
+  right: 30px;
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+}
+
+.heart-full {
+  opacity: 0;
+  z-index: 1;
+  background-image: linear-gradient(to left top, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
 .heart-full:hover {
   animation: fill-up 800ms;
   animation-fill-mode: forwards;
