@@ -99,24 +99,7 @@
   object-fit: cover;
 }
 
-/*Heart*/
 
-.menu-like i {
-  position: absolute;
-  top: 3.5%;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-.heart-full {
-  opacity: 0;
-  z-index: 1;
-  background-image: linear-gradient(to left top, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-weight: 700;
-}
 
 /*Cards*/
 
@@ -326,6 +309,23 @@
 /****** Animations ***********/
 
 /****** Animation heart ***********/
+
+.menu-like i {
+  position: absolute;
+  top: 3.5%;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.heart-full {
+  opacity: 0;
+  z-index: 1;
+  background-image: linear-gradient(to left top, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
 
 .heart-full:hover{
   animation: fill-up 500ms;
