@@ -108,21 +108,7 @@ header {
   text-align: center; 
 }
 
-.button {
-  background:linear-gradient(193.33deg, var(--primary-color) -11.44%, var(--secondary-color) 123.93%);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);    
-  padding: 13px 19px;
-  align-self: center;
-  border-radius: 25px;
-  font-weight: 500;
-  color: white;
-  
-}
 
-.button:hover {
-  opacity: 0.9;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-}
 
 /* Fonctionnement */  
 
@@ -368,6 +354,24 @@ header {
 }
 
 /****** Animations ***********/
+
+/****** Animations button ***********/
+
+.button {
+  background:linear-gradient(193.33deg, var(--primary-color) -11.44%, var(--secondary-color) 123.93%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);    
+  padding: 13px 19px;
+  align-self: center;
+  border-radius: 25px;
+  font-weight: 500;
+  color: white;
+  
+}
+
+.button:hover {
+  opacity: 0.9;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
 
 /****** Animation loader ***********/
 
