@@ -1,5 +1,7 @@
 
 
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+
 /* -------------Générales-------------- */
 
 * {
@@ -257,12 +259,7 @@
      height: 35px;
    }
   
-   h1 {
-    font-size: 32px;
-    line-height: 47px;
-   }
-
-   .banner {
+  .banner {
     height: 444px;
   }
 
